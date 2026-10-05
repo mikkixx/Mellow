@@ -73,12 +73,6 @@ header{
     background-size: cover;
     background-position: center;
 }
-.banner-photo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 .banner-text{
     position: absolute;
     bottom: 100px;
@@ -86,7 +80,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 .banner-text > h1{
     margin: 0;
@@ -94,7 +88,8 @@ header{
     font-size: 48px;
     font-weight: 600;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: #FAFAF7;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
 }
 .banner-button{
     padding: 17px 45px;
@@ -116,7 +111,7 @@ header{
     margin: 0;
     font-size: 18px;
     font-weight: 500;
-    color: #2B2118;
+    color: #403528;
 }
 .banner-button > img{
     height: 16px;
@@ -132,9 +127,9 @@ header{
 }
 .new > h2{
     margin: 0;
-    font-size: 52px;
+    font-size: 64px;
     font-weight: 600;
-    color: #2B2118;
+    color: #403528;
 }
 .new-grid{
     width: 100%;
@@ -213,7 +208,7 @@ footer{
     transition: all 0.3s ease;
 }
 .footer-column > a:hover{
-    color: #2B2118;
+    color: #403528;
     cursor: pointer;
 }
 .contacts{
@@ -250,4 +245,169 @@ footer{
 }
 .footer-social > img:hover{
     transform: scale(1.1);
+}
+.banner-catalog{
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background-image: url('../img/banner-catalog.png');
+    background-size: cover;
+    background-position: center;
+}
+#catalog{
+    font-size: 64px;
+    margin-bottom: 0;
+}
+.gender{
+    display: flex;
+    gap: 20px;
+}
+.gender > a{
+    padding: 17px 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 3px solid #FAFAF7;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #FAFAF7;
+    font-size: 28px;
+}
+.gender > a:hover{
+    background-color: #FAFAF7;
+    color: #403528;
+    cursor: pointer;
+}
+.women{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.women > h2{
+    font-size: 64px;
+    font-weight: 600;
+    color: #403528;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.filter > a{
+    padding: 10px 35px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 3px solid #BCB09C;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #BCB09C;
+    font-size: 28px;
+}
+.filter > a:hover{
+    background-color: #BCB09C;
+    color: #FAF9F7;
+    cursor: pointer;
+}
+.filter > img{
+    height: 51px;
+    transition: all 0.3s ease;
+}
+.filter > img:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.two-cards{
+    display: flex;
+    gap: 30px;
+}
+.image{
+    position: relative;
+}
+.image > img{
+    height: 659px;
+    z-index: 1;
+}
+.add-cart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.add-cart:hover{
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.498);
+    cursor: pointer;
+}
+.add-cart > img{
+    height: 24px;
+}
+.info-card > p{
+    font-size: 20px;
+    color: #403528;
+    margin-top: 7px;
+}
+.info-card > span{
+    font-size: 18px;
+    color: #403528;
+    margin-top: 3px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info > img{
+    height: 40px;
+    transition: all 0.3s ease;
+}
+.info > img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.more{
+    width: 86%;
+    display: flex;
+    justify-content: right;
+}
+.more > button{
+    width: 250px;
+    display: flex;
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.more > button > p{
+    font-size: 20px;
+    color:#403528;
+    transition: all 0.3s ease;
+}
+.more > button > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.more > button > img{
+    height: 24px;
+    transition: all 0.3s ease;
+}
+.more > button > img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
