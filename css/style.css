@@ -1174,6 +1174,50 @@ footer{
     color: #403528;
     white-space: nowrap;
 }
+
+
+.favorites-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.favorites-grid .card {
+    width: calc(50% - 15px);
+    min-width: 300px;
+    max-width: 480px;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    
+    display: flex;
+    flex-direction: column;
+}
+.favorites-grid .image {
+    position: relative;
+    transition: all 0.3s ease;
+}
+.favorites-grid .image > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.favorites-grid .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
 @media (max-width: 1200px) {
     header {
         padding: 0 15px;
@@ -1219,7 +1263,7 @@ footer{
     }
 }
 
-/* --- ширина до 900px --- */
+
 @media (max-width: 900px) {
         header {
         height: auto;
@@ -1360,9 +1404,13 @@ footer{
     .order-item {
         width: 100%;
     }
+    .favorites-grid .card {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
-/* --- ширина до 480px --- */
+
 @media (max-width: 480px) {
     .logo {
         font-size: 32px;
