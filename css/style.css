@@ -52,19 +52,29 @@ header{
     cursor: pointer;
     transform: scale(1.05);
 }
-.header-icons{
+.header-icons {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.header-icons > img{
+
+.header-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header-icons img {
     height: 24px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.header-icons > img:hover{
+
+.header-icons img:hover {
     transform: scale(1.1);
 }
+
 .banner{
     width: 100%;
     position: relative;
