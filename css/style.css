@@ -658,25 +658,32 @@ footer{
 /* ===== КОРЗИНА ===== */
 .cart {
     display: flex;
-    gap: 70px;
-    width: 1200px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px; 
     margin: 40px auto 0;
-    padding: 0 76px;
+    padding: 0 20px; 
+    box-sizing: border-box;
 }
 
 .cart-left {
-    width: 666px;
+    flex: 1; 
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: auto;
 }
 
 .cart-item {
     display: flex;
-    height: 178px;
-    padding: 16px 20px 16px 23px;
+    align-items: flex-start; 
+    padding: 16px 20px;
     border: 1px solid #403528;
     color: #403528;
+    gap: 15px;
+    height: auto; 
+    min-height: 178px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .cart-img {
@@ -684,14 +691,26 @@ footer{
     height: 146px;
     border-radius: 13px;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .cart-info {
     flex: 1;
-    margin-left: 11px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: #403528;
+    margin-left: 0;
+}
+
+.cart-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 15px;
+    margin-left: auto;
+    padding-top: 0;
+    flex-shrink: 0;
 }
 
 .hit {
@@ -937,14 +956,14 @@ footer{
 
 .profile-sidebar {
     width: 280px;
-    background: #FFFFFF;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    box-shadow: none;
     padding: 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid #E8E1D5;
+    border: 1px solid #403528;
 }
 
 .user-info {
@@ -1017,11 +1036,11 @@ footer{
 }
 
 .profile-card {
-    background: #FFFFFF;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0; 
+    box-shadow: none;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-    border: 1px solid #E8E1D5;
+    border: 1px solid #403528;
 }
 
 .card-header {
@@ -1080,8 +1099,9 @@ footer{
 }
 
 .order-item {
-    background: #F7F3ED;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    border: 1px solid #403528;
     padding: 20px;
     margin-bottom: 15px;
 }
