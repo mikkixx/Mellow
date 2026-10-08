@@ -335,9 +335,11 @@ footer{
 .two-cards{
     display: flex;
     gap: 30px;
+    margin-bottom: 20px;
 }
 .image{
     position: relative;
+    transition: all 0.3s ease;
 }
 .image > img{
     height: 659px;
@@ -371,6 +373,11 @@ footer{
     font-size: 20px;
     color: #403528;
     margin-top: 7px;
+    transition: all 0.3s ease;
+}
+.info-card > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .info-card > span{
     font-size: 18px;
@@ -421,6 +428,7 @@ footer{
     cursor: pointer;
     transform: scale(1.05);
 }
+
 
 /* ===== КОРЗИНА ===== */
 .cart {
