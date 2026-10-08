@@ -430,7 +430,6 @@ footer{
 }
 
 
-/* ===== КОРЗИНА ===== */
 .cart {
     display: flex;
     gap: 70px;
@@ -537,7 +536,6 @@ footer{
     font-family: 'Lato', sans-serif;
 }
 
-/* Правая колонка */
 .cart-right-block {
     width: 345px;
     color: #403528;
@@ -639,7 +637,6 @@ footer{
     height: 20px;
 }
 
-/* Преимущества */
 .benefits {
     margin-top: 23px;
     padding: 9px 16px 10px;
@@ -669,7 +666,6 @@ footer{
     height: 20px;
 }
 
-/* Примечания */
 .cart-notes {
     width: 1200px;
     margin: 50px auto 40px;
@@ -689,4 +685,246 @@ footer{
 .cart-notes p:last-child {
     max-width: 587px;
     margin-bottom: 0;
+}
+
+.profile-page {
+    width: 1200px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.profile-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #403528;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+.profile-sidebar {
+    width: 280px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #E8E1D5;
+}
+
+.user-info {
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 20px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #403528;
+    margin: 0 0 5px 0;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #8A7B68;
+    margin: 0;
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #403528;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.profile-nav a:hover {
+    background-color: #F7F3ED;
+}
+
+.profile-nav a.active {
+    background-color: #D9D9D9;
+    font-weight: 700;
+}
+
+.logout-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background: none;
+    border: 2px solid #403528;
+    border-radius: 50px;
+    color: #403528;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #403528;
+    color: #FFFFFF;
+}
+
+.profile-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #E8E1D5;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 15px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #403528;
+}
+
+.edit-btn, .view-all {
+    background: none;
+    border: none;
+    color: #8A7B68;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.edit-btn:hover, .view-all:hover {
+    color: #403528;
+    text-decoration: underline;
+}
+
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #F7F3ED;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-row .label {
+    font-size: 15px;
+    color: #8A7B68;
+}
+
+.info-row .value {
+    font-size: 15px;
+    color: #403528;
+    font-weight: 600;
+}
+
+.order-item {
+    background: #F7F3ED;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.order-item:last-child {
+    margin-bottom: 0;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.order-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: #403528;
+}
+
+.order-status {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.order-status.delivered {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.order-status.processing {
+    background: #FFF8E1;
+    color: #F57F17;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.order-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.order-text {
+    flex: 1;
+}
+
+.order-text p {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #403528;
+}
+
+.order-text span {
+    font-size: 13px;
+    color: #8A7B68;
+}
+
+.order-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #403528;
+    white-space: nowrap;
 }
